@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SGI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                            <span class="title"><h2>SGI</h2></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                            <span class="title"> Painel Principal</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                            <span class="title"> Cadastro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                            <span class="title"> Eventos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+                            <span class="title"> Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                            <span class="title"> Ajuda</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search here">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="user">
+                        <img src="assets/perfil.png">
+                    </div>
+                </div>
+
+                <div class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Membros</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Patrimônios</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Dízimo</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Ofertas</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h2>Aniversariantes do mês</h2>
+                            <a href="#" class="btn">Geral</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Foto</td>
+                                    <td>Data</td>
+                                    <td>Nome</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="60px"><div class="imgbx"><img src="assets/perfil.png"></div></td>
+                                    <td>22-08-2024</td>
+                                    <td><span>Irismar Ferreira</span></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgbx"><img src="assets/perfil.png"></div></td>
+                                    <td>28-08-2024</td>
+                                    <td><span class="names">Maria Madalena</span></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgbx"><img src="assets/perfil.png"></div></td>
+                                    <td>30-08-2024</td>
+                                    <td><span>Raimunda Ferreira</span></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgbx"><img src="assets/perfil.png"></div></td>
+                                    <td>30-08-2024</td>
+                                    <td><span>Raimunda Ferreira</span></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="eventosProximos">
+                        <h2>Próximos Eventos</h2>
+                            <div class="parent">
+                                <div class="card">
+                                    <div class="content-box">
+                                        <span class="card-title">Reunião</span>
+                                        <p class="card-content">
+                                            <i class="fa fa-clock-o" aria-hidden="true"> 17:00</i> 
+                                        </p>
+                                        <span class="see-more">Ver mais</span>
+                                    </div>
+                                    <div class="date-box">
+                                        <span class="month">Agosto</span>
+                                        <span class="date">15</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content-box">
+                                        <span class="card-title">Culto</span>
+                                        <p class="card-content">
+                                            <i class="fa fa-clock-o" aria-hidden="true"> 19:00</i> 
+                                        </p>
+                                        <span class="see-more">Ver mais</span>
+                                    </div>
+                                    <div class="date-box">
+                                        <span class="month">Agosto</span>
+                                        <span class="date">25</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
