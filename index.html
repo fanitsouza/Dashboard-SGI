@@ -8,12 +8,16 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+
+<!------------------------------------------------------------------------BARRA DE NAVEGAÇÃO-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
         <div class="container">
             <div class="navigation">
                 <ul>
                     <li>
                         <a href="#">
-                            <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                            <span class="icon"><img src="assets/logo.png" alt="Logo SGI"></span>
                             <span class="title"><h2>SGI</h2></span>
                         </a>
                     </li>
@@ -21,24 +25,42 @@
                         <a href="#">
                             <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
                             <span class="title"> Painel Principal</span>
+                            
                         </a>
+                        
                     </li>
                     <li>
                         <a href="#">
                             <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
                             <span class="title"> Cadastro</span>
+                            <div class="icon-nav">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
                         </a>
+                        <!--<ul class="sub-menu">
+                            <li><a href="#">Membros</a></li>
+                            <li><a href="#">Filiais</a></li>
+                            <li><a href="#">Grupos</a></li>
+                            <li><a href="#">Tarefas</a></li>
+                        </ul>-->
                     </li>
                     <li>
                         <a href="#">
                             <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                             <span class="title"> Eventos</span>
+                            <div class="icon-nav">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
                         </a>
+                        
                     </li>
                     <li>
                         <a href="#">
                             <span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
                             <span class="title"> Financeiro</span>
+                            <div class="icon-nav">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -51,19 +73,29 @@
 
             </div>
 
+<!------------------------------------------------------------------------MAIN-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
             <div class="main">
                 <div class="topbar">
                     <div class="toggle" onclick="toggleMenu();"></div>
+
+                    <!--BARRA DE PESQUISA-->
                     <div class="search">
                         <label>
-                            <input type="text" placeholder="Search here">
+                            <input type="text" placeholder="Buscar">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </label>
                     </div>
+
+                    <!--BARRA DE USUÁRIO-->
                     <div class="user">
                         <img src="assets/perfil.png">
                     </div>
                 </div>
+<!------------------------------------------------------------------------CARDS GERAIS-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
                 <div class="cardBox">
                     <div class="card">
@@ -104,6 +136,25 @@
                     </div>
                 </div>
 
+
+<!------------------------------------------------------------------------GRÁFICOS-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+                <div class="graphBox">
+                    
+                    <div class="box">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="box">
+                        <canvas id="earning"></canvas>
+                    </div>
+
+                </div>
+
+
+<!------------------------------------------------------------------------PAINEL PRINCIPAL - ANIVERSARIANTES-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
                 <div class="details">
                     <div class="recentOrders">
                         <div class="cardHeader">
@@ -143,6 +194,10 @@
                             </tbody>
                         </table>
                     </div>
+
+<!------------------------------------------------------------------------PAINEL PRINCIPAL - EVENTOS -------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
                     <div class="eventosProximos">
                         <h2>Próximos Eventos</h2>
                             <div class="parent">
@@ -178,6 +233,10 @@
                 </div>
             </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+        <script src="my_chart.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
