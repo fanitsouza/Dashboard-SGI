@@ -1,5 +1,6 @@
-SGI - Sistema de Gerenciamento de Igrejas 🎯
-📌 Descrição
+SGI - Sistema de Gerenciamento de Igrejas 
+
+##📌 Descrição
 O SGI (Sistema de Gerenciamento de Igrejas) é um dashboard desenvolvido com HTML, CSS e JavaScript, criado para facilitar a administração de igrejas, permitindo o gerenciamento de membros, eventos, finanças e muito mais.
 
 🚀 Tecnologias Utilizadas
